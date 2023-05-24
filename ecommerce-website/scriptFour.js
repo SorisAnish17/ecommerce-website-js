@@ -49,11 +49,15 @@ btn.addEventListener("click", (e) => {
 });
 fetchData("https://fakestoreapi.com/products");
 let sessionData = sessionStorage;
-let username = sessionData.key(1);
+let username = sessionData.key(0);
 let userdata = JSON.parse(sessionStorage.getItem(username));
 let anger = document.querySelector("#anger");
 console.log(userdata);
-anger.textContent=userdata.firstName;
+if (userdata) {
+  anger.textContent = userdata.firstName;
+} else {
+  anger.textContent = "Guest Account";
+}
 let profilebtn = document.querySelector("#profile-btn");
 profilebtn.addEventListener("click", (e) => {
   e.preventDefault();
