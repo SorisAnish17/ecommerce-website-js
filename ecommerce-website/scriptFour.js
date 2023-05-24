@@ -53,7 +53,7 @@ let username = sessionData.key(1);
 let userdata = JSON.parse(sessionStorage.getItem(username));
 let anger = document.querySelector("#anger");
 console.log(userdata);
-if (userdata) {
+if (userdata.firstName) {
   anger.textContent = userdata.firstName;
 } else {
   anger.textContent = "Guest Account";
