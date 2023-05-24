@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="profile-Page" />
+    <title>profile-Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="profile-login">
+    <button class="btn btn-warning" id="back-btn">
+      <i class="fa-solid fa-delete-left fa-beat-fade"></i>
+    </button>
+    <div class="container col-6 form-area mt-5 fst-italic">
+      <form action="#" id="profile-form" autocomplete="off">
+        <h5 class="text-center">PROFILE LOGIN</h5>
+        <br />
+        <small>FirstName</small>
+        <input
+          type="text"
+          id="firstName"
+          placeholder="First Name"
+          class="col-10 m-2 border-success"
+        />
+        <small>secondName</small>
+        <input
+          type="text"
+          id="secondName"
+          placeholder="second Name"
+          class="col-10 m-2 border-success"
+        />
+        <small>Address</small>
+        <div id="address">
+          <strong class="mx-2">address</strong>
+          <textarea
+            name="textArea"
+            id="textArea"
+            cols="45"
+            rows="3"
+            class="mx-2 d-block border-success"
+            placeholder="address"
+          ></textarea>
+        </div>
+        <small>Email</small>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="col-10 m-2 border-success"
+          placeholder="enter your email"
+        />
+        <div class="radio m-2">
+          <p class="d-block">Gender</p>
+          <input type="text" id="gender" class="border-success" />
+        </div>
+        <div class="subscripton m-3">
+          <strong>Select Your Plan:</strong>
+          <input type="text" id="plan" class="border-success" />
+        </div>
+        <div
+          class="buttons d-flex justify-content-center my-4"
+          id="edit-button"
+        >
+          <p class="m-0 d-flex justify-content-center">
+            Change your details, then click editbutton
+          </p>
+          <button type="submit" id="edit" class="btn btn-success opacity-75">
+            Edit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptThree.js"></script>
+  </body>
+</html>
