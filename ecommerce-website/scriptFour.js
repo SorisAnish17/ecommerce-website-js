@@ -53,11 +53,7 @@ let username = sessionData.key(1);
 let userdata = JSON.parse(sessionStorage.getItem(username));
 let anger = document.querySelector("#anger");
 console.log(userdata);
-if (userdata.firstName) {
-  anger.textContent = userdata.firstName;
-} else {
-  anger.textContent = "Guest Account";
-}
+anger.textContent=userdata.firstName;
 let profilebtn = document.querySelector("#profile-btn");
 profilebtn.addEventListener("click", (e) => {
   e.preventDefault();
