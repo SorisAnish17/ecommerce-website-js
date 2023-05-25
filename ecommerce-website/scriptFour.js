@@ -49,7 +49,7 @@ btn.addEventListener("click", (e) => {
 });
 fetchData("https://fakestoreapi.com/products");
 let sessionData = sessionStorage;
-let username = sessionData.key(1);
+let username = sessionData.key(0);
 let userdata = JSON.parse(sessionStorage.getItem(username));
 let anger = document.querySelector("#anger");
 console.log(userdata);
