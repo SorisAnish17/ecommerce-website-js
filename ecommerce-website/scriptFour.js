@@ -62,7 +62,7 @@ let profilebtn = document.querySelector("#profile-btn");
 profilebtn.addEventListener("click", (e) => {
   e.preventDefault();
   let sessionValue = Object.entries(sessionStorage);
-  let value = JSON.parse(sessionValue[1][1]);
+  let value = JSON.parse(sessionValue[0][1]);
   console.log(value);
   window.location.href = `./profile.html?id=${value.id}`;
 });
