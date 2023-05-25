@@ -1,0 +1,97 @@
+body {
+  background: url("images/pexels-eberhard-grossgasteiger-844297.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form-area {
+  background-color: aliceblue;
+  width: 500px;
+  min-height: 525px;
+}
+.container {
+  border-radius: 10px;
+}
+small {
+  margin-left: 5px;
+  display: block;
+}
+.buttons {
+  margin-left: 165px;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+@media all and (max-width: 600px) {
+  body {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .form-area {
+    width: 350px;
+  }
+  #textArea {
+    width: 225px;
+  }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+/* login page */
+#login-page {
+  background-image: url(images/pexels-sebastian-ervi-1763075.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.main {
+  width: 400px !important;
+  height: 425px;
+  background-color: #150101;
+  margin-top: 275px;
+}
+@media screen and(max-width:400px) {
+  .main {
+    width: 250px;
+    height: 250px;
+  }
+}
+#profile-login {
+  background: url("images/pexels-aleksandar-pasaric-1134166.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.profile {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(32, 2, 35);
+}
+#profile-form {
+  min-height: 585px;
+}
+#back {
+  position: absolute;
+  left: 35px;
+}
+#back-btn {
+  margin: 12px 50px;
+}
+@media screen and(max-width:400px) {
+  .profile {
+    width: 250px;
+    height: 250px;
+  }
+  #edit-button {
+    margin-bottom: 15px;
+  }
+}

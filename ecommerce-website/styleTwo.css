@@ -1,0 +1,32 @@
+#product {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 15px;
+}
+body {
+  background-color: #182978;
+}
+#description {
+  font-size: 12px;
+}
+.searchbar input {
+  width: 350px;
+}
+#products {
+  width: 100vw;
+  min-height: 100vh;
+}
+#profile {
+  position: absolute;
+  right: 200px;
+  top: 55px;
+}
+#log-out {
+  position: absolute;
+  right: 75px;
+  top: 55px;
+}
+#search {
+  border-radius: 15px;
+}
