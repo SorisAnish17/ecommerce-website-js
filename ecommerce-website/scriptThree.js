@@ -18,7 +18,7 @@ for (let element of form) {
 }
 //Data
 let userSessionStorage = sessionStorage;
-let key = userSessionStorage.key(1);
+let key = userSessionStorage.key(0);
 let userData = JSON.parse(sessionStorage.getItem(key));
 console.log(userData);
 firstName.value = userData.firstName;
